@@ -1,0 +1,58 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - oagui.play
+    - oagui.hue
+    - oagui.volume
+    - ab.kick.notify
+    - ab.warn.notify
+    - ab.ban.notify
+    - ab.mute.notify
+    - ab.tempwarn.notify
+    - ab.tempban.notify
+    - ab.yempmute.notify
+    - ab.ipban.notify
+    - ab.warns.own
+    - ab.history
+  moderator:
+    inherit:
+    - default
+    permissions:
+    - ab.kick.exempt
+    - ab.mute.use
+    - ab.warn.use
+    - ab.ban.exempt
+    - ab.warn.exempt
+    - ab.tempban.exempt
+    - ab.tempmute.exempt
+    - ab.tempwarn.exempt
+    - ab.tempmute.use
+    - ab.tempwarn.use
+    - ab.banlist
+    - ab.help
+    - ab.ipban.exempt
+    - ab.warns.other
+    - ab.check
+    - ab.check.ip
+  admin:
+    inherit:
+    - moderator
+    permissions:
+    - ab.kick.use
+    - ab.ban.use
+    - ab.warn.undo
+    - ab.ipban.use
+    - ab.ban.undo
+    - ab.mute.undo
+    - ab.tempban.use
+  owner:
+    inherit:
+    - admin
+    permissions:
+    - ab.all.undo
+    - oagui.admin
+    - ab.systemprefs
+    - ab.reload
+schema-version: 1
