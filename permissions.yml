@@ -16,6 +16,60 @@ groups:
     - ab.ipban.notify
     - ab.warns.own
     - ab.history
+    - factions.kit.rank0
+    - essentials.help
+    - essentials.helpop
+    - essentials.list
+    - essentials.motd
+    - essentials.rules
+    - essentials.spawn
+    - essentials.afk.auto
+    - essentials.balance
+    - essentials.balancetop
+    - essentials.book
+    - essentials.compass
+    - essentials.delhome
+    - essentials.depth
+    - essentials.exp
+    - essentials.getpos
+    - essentials.hat
+    - essentials.home
+    - essentials.ignore
+    - essentials.itemdb
+    - essentials.kit
+    - essentials.kits.tools
+    - essentials.mail
+    - essentials.mail.send
+    - essentials.me
+    - essentials.msg
+    - essentials.msg.color
+    - essentials.msg.format
+    - essentials.nick
+    - essentials.pay
+    - essentials.ping
+    - essentials.protect
+    - essentials.recipe
+    - essentials.seen
+    - essentials.sethome
+    - essentials.sethome.bed
+    - essentials.sethome.multiple
+    - essentials.signs.use.*
+    - essentials.signs.create.disposal
+    - essentials.signs.create.mail
+    - essentials.signs.create.protection
+    - essentials.time
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpahere
+    - essentials.tpdeny
+    - essentials.warp
+    - essentials.warp.list
+    - essentials.help
+    - essentials.helpop
+    - essentials.list
+    - essentials.motd
+    - essentials.rules
+    - essentials.spawn
   moderator:
     inherit:
     - default
@@ -36,6 +90,7 @@ groups:
     - ab.warns.other
     - ab.check
     - ab.check.ip
+    
   admin:
     inherit:
     - moderator
