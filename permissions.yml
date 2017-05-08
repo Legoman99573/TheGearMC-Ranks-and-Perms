@@ -107,7 +107,6 @@ groups:
     permissions:
     - message.dev
     - essentials.fly
-    - *.*
     inheritance:
     - admin
   owner:
