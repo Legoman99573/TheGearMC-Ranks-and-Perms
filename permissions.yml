@@ -1,7 +1,7 @@
 groups:
   default:
     options:
-      default: true
+      default: 'true'
     permissions:
     - oagui.play
     - oagui.hue
@@ -70,9 +70,9 @@ groups:
     - essentials.motd
     - essentials.rules
     - essentials.spawn
+    - message.default
+    inheritance: []
   moderator:
-    inherit:
-    - default
     permissions:
     - ab.kick.exempt
     - ab.mute.use
@@ -90,10 +90,9 @@ groups:
     - ab.warns.other
     - ab.check
     - ab.check.ip
-    
+    inheritance:
+    - default
   admin:
-    inherit:
-    - moderator
     permissions:
     - ab.kick.use
     - ab.ban.use
@@ -102,12 +101,23 @@ groups:
     - ab.ban.undo
     - ab.mute.undo
     - ab.tempban.use
+    inheritance:
+    - moderator
+  developer:
+    permissions:
+    - message.dev
+    - essentials.fly
+    - *.*
+    inheritance:
+    - admin
   owner:
     inherit:
     - admin
     permissions:
+    - message.owner
     - ab.all.undo
     - oagui.admin
     - ab.systemprefs
     - ab.reload
+    inheritance: []
 schema-version: 1
